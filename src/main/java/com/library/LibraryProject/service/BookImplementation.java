@@ -28,14 +28,13 @@ public class BookImplementation implements BookInterface{
     public String saveBook(BookDto bookDto) {
         Book bookEntity = BookMapper.toEntity(bookDto);
         bookRepository.save(bookEntity);
-        return "Book saved sucessfully.";
+        return "Book saved successfully.";
     }
 
     @Override
     public BookDto findBook(String title) {
-        Book bookentity = bookRepository.findByTitle(title);
-        BookDto bookDto = BookMapper.toDto(bookentity);
-        return bookDto;
+        Book bookEntity = bookRepository.findByTitle(title);
+        return BookMapper.toDto(bookEntity);
     }
 
     @Override
@@ -50,13 +49,13 @@ public class BookImplementation implements BookInterface{
 
         bookRepository.save(book);
 
-        return "Book" + book.getTitle() + "updated sucessfully";
+        return "Book" + book.getTitle() + "updated successfully";
     }
 
     @Override
     public String deleteBook(Long id) {
         bookRepository.deleteById(id);
 
-        return "Book" + id + "updated sucessfully";
+        return "Book" + id + "updated successfully";
     }
 }
