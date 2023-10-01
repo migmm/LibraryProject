@@ -39,6 +39,7 @@ public class AuthorImplementation implements AuthorInterface{
     public String updateAuthor(Long id, AuthorDto authorDto) {
         Author author = authorRepository.findById(id).orElse(null);
             author.setName(authorDto.getName());
+            author.setSurname(authorDto.getSurname());
             authorRepository.save(author);
             return "Author updated successfully.";
     }
