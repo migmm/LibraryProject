@@ -32,24 +32,15 @@ public class AuthorImplementation implements AuthorInterface{
     @Override
     public AuthorDto findAuthor(Long id) {
         Author authorEntity = authorRepository.findById(id).orElse(null);
-        if (authorEntity != null) {
-            return AuthorMapper.toDto(authorEntity);
-        } else {
-            return null;
-        }
+        return AuthorMapper.toDto(authorEntity);
     }
 
     @Override
     public String updateAuthor(Long id, AuthorDto authorDto) {
         Author author = authorRepository.findById(id).orElse(null);
-        if (author != null) {
             author.setName(authorDto.getName());
-            // Agrega otros campos que desees actualizar
             authorRepository.save(author);
             return "Author updated successfully.";
-        } else {
-            return "Author not found.";
-        }
     }
 
     @Override

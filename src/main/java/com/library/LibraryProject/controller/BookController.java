@@ -29,11 +29,7 @@ public class BookController {
     @GetMapping("/find/{title}")
     public ResponseEntity<BookDto> findBook(@PathVariable String title) {
         BookDto bookDto = bookService.findBook(title);
-        if (bookDto != null) {
-            return new ResponseEntity<>(bookDto, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+        return new ResponseEntity<>(bookDto, HttpStatus.OK);
     }
 
     @PutMapping("/update/{id}")
