@@ -8,7 +8,6 @@ import java.util.Set;
 
 
 @Entity
-@Table(schema = "book")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

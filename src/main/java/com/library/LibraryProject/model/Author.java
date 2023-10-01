@@ -9,7 +9,6 @@ import java.util.Set;
 
 
 @Entity
-@Table(schema = "author")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

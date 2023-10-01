@@ -19,10 +19,9 @@ public class BookImplementation implements BookInterface{
 
     @Override
     public List<BookDto> findAllBooks() {
-        List<BookDto> booksList = bookRepository.findAll().stream()
+        return bookRepository.findAll().stream()
                 .map(BookMapper::toDto)
                 .collect(Collectors.toList());
-        return booksList;
     }
 
     @Override
