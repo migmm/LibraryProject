@@ -13,7 +13,6 @@ import java.util.Set;
 @NoArgsConstructor
 
 public class AuthorDto {
-
     private String name;
     private String surname;
     private Set<Book> books;

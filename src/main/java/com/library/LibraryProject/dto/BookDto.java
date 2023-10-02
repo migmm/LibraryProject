@@ -14,10 +14,8 @@ import java.util.Set;
 @NoArgsConstructor
 
 public class BookDto {
-
     private String title;
     private Date publishDate;
     private String genre;
     private Set<Author> authors;
-
 }
