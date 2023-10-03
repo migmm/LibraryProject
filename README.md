@@ -3,15 +3,15 @@
 
 [![Java](https://img.shields.io/badge/Java-17-blue.svg)](https://www.oracle.com/java/) [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.4-brightgreen.svg)](https://spring.io/projects/spring-boot) [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.4-blue.svg)](https://www.postgresql.org/) [![Gradle](https://img.shields.io/badge/Gradle-8.2.1-brightgreen.svg)](https://gradle.org/)
 
-A brief description of your Java, Spring Boot, and PostgreSQL library project. You can include an introduction to your project and its purpose here.
+This backend project is designed to simulate a library management system, allowing for the efficient creation, retrieval, updating, and deletion of library resources.
 
 ## Technologies Used
 
-- **Java:** We use Java as the main programming language. Make sure you have [Java 17](https://www.oracle.com/java/) installed.
+- **Java:** I use Java as the main programming language. Make sure you have [Java 17](https://www.oracle.com/java/) installed.
 
-- **Spring Boot:** We use Spring Boot as the framework to build our application. You can learn more about Spring Boot [here](https://spring.io/projects/spring-boot).
+- **Spring Boot:** I use Spring Boot as the framework to build our application. You can learn more about Spring Boot [here](https://spring.io/projects/spring-boot).
 
-- **PostgreSQL:** We use PostgreSQL as our relational database. Make sure you have [PostgreSQL 13.4](https://www.postgresql.org/) or higher installed and configured correctly.
+- **PostgreSQL:** I use PostgreSQL as our relational database. Make sure you have [PostgreSQL 13.4](https://www.postgresql.org/) or higher installed and configured correctly.
 
 - **Gradle:** This project is built with Gradle. You can learn more about Gradle [here](https://gradle.org/).
 
@@ -46,6 +46,8 @@ Before running the application, make sure you have the following installed:
     gradle bootRun
     ```
 
+## Swagger documentation
+http://localhost:8080/swagger-ui/index.html#/
 
 ## Contact
 
